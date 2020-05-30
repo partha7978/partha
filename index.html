@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+
+   <head>
+      <title>Startup</title>
+
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+  			<div class="container d-flex align-items-center h-100 "> <!--this is not working alig- items-center so we have to debug this properly because if we inspect then we noticed that the whole container is not cover the entire body or background so we can write in bootstrap h-100 means the height is 100 to perfectly fit the background  as in style.css  in html{ we use height is 100 so-->  <!-- to bring them in a container  and also we use d- flex to make the text and the button to the middle of the website this is the last part we have to do. in bootstrap there is vertical allignment for doing this but this is not a recomended way so we use flexbox for this work-->
+  				<div class="row"> <!-- by this we lost our hr tag but after this we use another section tag after the header tag to bring back the hr line  -->
+  					<header class="text-center col-12"> <!--  for making the text into center  also we use col-12 because we want to add the text perfectly so we use bootstrap grid system.-->
+
+	  						<h1><strong>the biggest startup landing page </strong></h1>
+	  				</header>
+	  				<div class="buffer col-12"></div>  <!-- we use thhis buffer to make some space between the h1 and the button so we do thid but we take the column 12 but nothing happens in page  and also if we inspect it then we see that the buffer is not there so we need  a css file .buffer and add a height then as a result there is space between the h1 and the button-->
+	  					<section class="text-center col-12"> <!-- after that we got  the button at he center and also we got our hr tag back -->
+	  						<hr>  		
+	  						<a href="https://mailchi.mp/a2f57bc26337/parth"><button class="btn btn-primary" >continue</button>
+	  						</a>
+	  					</section>
+
+	  			</div>
+
+            </div>
+  </body>
+</html>
+      
